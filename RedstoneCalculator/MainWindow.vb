@@ -1,4 +1,17 @@
 ﻿Public Class MainWindow
+
+    Private Sub clearAmounts()
+        repeaterAmount.Text = "0"
+        comparatorAmount.Text = "0"
+        dispenserAmount.Text = "0"
+        dropperAmount.Text = "0"
+        redstoneLampAmount.Text = "0"
+        daylightSensorAmount.Text = "0"
+        pistonAmount.Text = "0"
+        stickyPistonAmount.Text = "0"
+        noteblockAmount.Text = "0"
+    End Sub
+
     Private Sub MainWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         repeaterAmount.Enabled = False
         comparatorAmount.Enabled = False
@@ -9,16 +22,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        repeaterAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-
+        clearAmounts()
     End Sub
 
     Private Sub repeaterButton_CheckedChanged(sender As Object, e As EventArgs) Handles repeaterButton.CheckedChanged
@@ -31,15 +35,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub comparatorButton_CheckedChanged(sender As Object, e As EventArgs) Handles comparatorButton.CheckedChanged
@@ -52,16 +48,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub dispenserButton_CheckedChanged(sender As Object, e As EventArgs) Handles dispenserButton.CheckedChanged
@@ -74,16 +61,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub dropperButton_CheckedChanged(sender As Object, e As EventArgs) Handles dropperButton.CheckedChanged
@@ -96,16 +74,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub redstoneLampButton_CheckedChanged(sender As Object, e As EventArgs) Handles redstoneLampButton.CheckedChanged
@@ -118,16 +87,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub daylightSensorButton_CheckedChanged(sender As Object, e As EventArgs) Handles daylightSensorButton.CheckedChanged
@@ -140,15 +100,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub pistonButton_CheckedChanged(sender As Object, e As EventArgs) Handles pistonButton.CheckedChanged
@@ -161,15 +113,7 @@
         pistonAmount.Enabled = True
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub stickyPistonButton_CheckedChanged(sender As Object, e As EventArgs) Handles stickyPistonButton.CheckedChanged
@@ -182,15 +126,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = True
         noteblockAmount.Enabled = False
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub noteblockButton_CheckedChanged(sender As Object, e As EventArgs) Handles noteblockButton.CheckedChanged
@@ -203,15 +139,7 @@
         pistonAmount.Enabled = False
         stickyPistonAmount.Enabled = False
         noteblockAmount.Enabled = True
-        pistonAmount.Text = "0"
-        stickyPistonAmount.Text = "0"
-        noteblockAmount.Text = "0"
-        comparatorAmount.Text = "0"
-        repeaterAmount.Text = "0"
-        dispenserAmount.Text = "0"
-        dropperAmount.Text = "0"
-        redstoneLampAmount.Text = "0"
-        daylightSensorAmount.Text = "0"
+        clearAmounts()
     End Sub
 
     Private Sub repeaterAmount_TextChanged(sender As Object, e As EventArgs) Handles repeaterAmount.TextChanged
@@ -226,7 +154,6 @@
         quartzResult.Text = Val(comparatorAmount.Text) * 1
     End Sub
 
-    'Dozownik'
     Private Sub dispenserAmount_TextChanged(sender As Object, e As EventArgs) Handles dispenserAmount.TextChanged
         cobblestoneResult.Text = Val(dispenserAmount.Text) * 7
         bowResult.Text = Val(dispenserAmount.Text) * 1
