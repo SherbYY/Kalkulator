@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace RedstoneCalculator
@@ -8,6 +11,27 @@ namespace RedstoneCalculator
         public MainWindow()
         {
             InitializeComponent();
+
+            byte[] font = Properties.Resources.Minecraftia;
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            IntPtr pointer = Marshal.AllocCoTaskMem(font.Length);
+            Marshal.Copy(font, 0, pointer, font.Length);
+            pfc.AddMemoryFont(pointer, font.Length);
+            Marshal.FreeCoTaskMem(pointer);
+            Font minecraftia = new Font(pfc.Families[0], 10);
+
+            redstoneResult.Font = minecraftia;
+            redstoneTorchResult.Font = minecraftia;
+            stoneResult.Font = minecraftia;
+            cobblestoneResult.Font = minecraftia;
+            ironIngotResult.Font = minecraftia;
+            bowResult.Font = minecraftia;
+            glowstoneResult.Font = minecraftia;
+            quartzResult.Font = minecraftia;
+            woodenSlabResult.Font = minecraftia;
+            glassResult.Font = minecraftia;
+            slimeResult.Font = minecraftia;
+            woodenPlanksResult.Font = minecraftia;
         }
 
         private void clear(TextBox textBox)
@@ -36,9 +60,10 @@ namespace RedstoneCalculator
                 textBox.Enabled = true;
         }
 
-        private void setText(Label label, int number)
+        private void setText(Control label, int number)
         {
-            label.Text = number.ToString();
+            if (number > 999) label.Text = "∞";
+            else label.Text = number.ToString();
         }
 
         private int getAmount(TextBox textBox)
