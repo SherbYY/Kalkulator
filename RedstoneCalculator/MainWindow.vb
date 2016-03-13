@@ -129,6 +129,7 @@
         redstoneLampAmount.Text = "0"
         daylightSensorAmount.Text = "0"
     End Sub
+
     Private Sub daylightSensorButton_CheckedChanged(sender As Object, e As EventArgs) Handles daylightSensorButton.CheckedChanged
         repeaterAmount.Enabled = False
         comparatorAmount.Enabled = False
@@ -213,66 +214,58 @@
         daylightSensorAmount.Text = "0"
     End Sub
 
-    'Przekaznik'
-    Private Sub reptxt_TextChanged(sender As Object, e As EventArgs) Handles repeaterAmount.TextChanged
-        redstone.Text = Val(repeaterAmount.Text) * 1 'Redstone
-        redstoneT.Text = Val(repeaterAmount.Text) * 2  'Pochodnie
-        stone.Text = Val(repeaterAmount.Text) * 3  'Kamien
+    Private Sub repeaterAmount_TextChanged(sender As Object, e As EventArgs) Handles repeaterAmount.TextChanged
+        redstoneResult.Text = Val(repeaterAmount.Text) * 1
+        redstoneTorchResult.Text = Val(repeaterAmount.Text) * 2
+        stoneResult.Text = Val(repeaterAmount.Text) * 3
     End Sub
 
-    'Komparator'
-    Private Sub comtxt_TextChanged(sender As Object, e As EventArgs) Handles comparatorAmount.TextChanged
-        stone.Text = Val(comparatorAmount.Text) * 3 'Kamien
-        redstoneT.Text = Val(comparatorAmount.Text) * 3 'Pochodnie
-        qua.Text = Val(comparatorAmount.Text) * 1 'Kwarc
+    Private Sub comparatorAmount_TextChanged(sender As Object, e As EventArgs) Handles comparatorAmount.TextChanged
+        stoneResult.Text = Val(comparatorAmount.Text) * 3
+        redstoneTorchResult.Text = Val(comparatorAmount.Text) * 3
+        quartzResult.Text = Val(comparatorAmount.Text) * 1
     End Sub
 
     'Dozownik'
-    Private Sub distxt_TextChanged(sender As Object, e As EventArgs) Handles dispenserAmount.TextChanged
-        Cstone.Text = Val(dispenserAmount.Text) * 7 'Cobel
-        bow.Text = Val(dispenserAmount.Text) * 1 'Luk
-        redstone.Text = Val(dispenserAmount.Text) * 1 'Redstone
+    Private Sub dispenserAmount_TextChanged(sender As Object, e As EventArgs) Handles dispenserAmount.TextChanged
+        cobblestoneResult.Text = Val(dispenserAmount.Text) * 7
+        bowResult.Text = Val(dispenserAmount.Text) * 1
+        redstoneResult.Text = Val(dispenserAmount.Text) * 1
     End Sub
 
-    'Podajnik'
-    Private Sub dropptxt_TextChanged(sender As Object, e As EventArgs) Handles dropperAmount.TextChanged
-        Cstone.Text = Val(dropperAmount.Text) * 7 'Cobel
-        redstone.Text = Val(dropperAmount.Text) * 1 'Redstone
+    Private Sub dropperAmount_TextChanged(sender As Object, e As EventArgs) Handles dropperAmount.TextChanged
+        cobblestoneResult.Text = Val(dropperAmount.Text) * 7
+        redstoneResult.Text = Val(dropperAmount.Text) * 1
     End Sub
 
-    'Lampa'
-    Private Sub lamptxt_TextChanged(sender As Object, e As EventArgs) Handles redstoneLampAmount.TextChanged
-        redstone.Text = Val(redstoneLampAmount.Text) * 4 'Redstone
-        Gstone.Text = Val(redstoneLampAmount.Text) * 1 'Glowstone
+    Private Sub redstoneLampAmount_TextChanged(sender As Object, e As EventArgs) Handles redstoneLampAmount.TextChanged
+        redstoneResult.Text = Val(redstoneLampAmount.Text) * 4
+        glowstoneResult.Text = Val(redstoneLampAmount.Text) * 1
     End Sub
 
-    'Czujnik Światła'
-    Private Sub sensortxt_TextChanged(sender As Object, e As EventArgs) Handles daylightSensorAmount.TextChanged
-        slab.Text = Val(daylightSensorAmount.Text) * 3 'Polplytki
-        qua.Text = Val(daylightSensorAmount.Text) * 3 'Kwarc
-        glass.Text = Val(daylightSensorAmount.Text) * 3 'Szklo
+    Private Sub daylightSensorAmount_TextChanged(sender As Object, e As EventArgs) Handles daylightSensorAmount.TextChanged
+        woodenSlabResult.Text = Val(daylightSensorAmount.Text) * 3
+        quartzResult.Text = Val(daylightSensorAmount.Text) * 3
+        glassResult.Text = Val(daylightSensorAmount.Text) * 3
     End Sub
 
-    'Tlok'
-    Private Sub pistontxt_TextChanged(sender As Object, e As EventArgs) Handles pistonAmount.TextChanged
-        Cstone.Text = Val(pistonAmount.Text) * 4 'Cobel
-        iron.Text = Val(pistonAmount.Text) * 1 'Zelazo
-        redstone.Text = Val(pistonAmount.Text) * 1 'Redstone
-        plank.Text = Val(pistonAmount.Text) * 3 'Deski
+    Private Sub pistonAmount_TextChanged(sender As Object, e As EventArgs) Handles pistonAmount.TextChanged
+        cobblestoneResult.Text = Val(pistonAmount.Text) * 4
+        ironIngotResult.Text = Val(pistonAmount.Text) * 1
+        redstoneResult.Text = Val(pistonAmount.Text) * 1
+        woodenPlanksResult.Text = Val(pistonAmount.Text) * 3
     End Sub
 
-    'Lepki Tlok'
-    Private Sub spistontxt_TextChanged(sender As Object, e As EventArgs) Handles stickyPistonAmount.TextChanged
-        Cstone.Text = Val(stickyPistonAmount.Text) * 4 'Cobel
-        iron.Text = Val(stickyPistonAmount.Text) * 1 'Zelazo
-        redstone.Text = Val(stickyPistonAmount.Text) * 1 'Redstone
-        plank.Text = Val(stickyPistonAmount.Text) * 3 'Deski
-        slime.Text = Val(stickyPistonAmount.Text) * 1 'Slimeball
+    Private Sub stickyPistonAmount_TextChanged(sender As Object, e As EventArgs) Handles stickyPistonAmount.TextChanged
+        cobblestoneResult.Text = Val(stickyPistonAmount.Text) * 4
+        ironIngotResult.Text = Val(stickyPistonAmount.Text) * 1
+        redstoneResult.Text = Val(stickyPistonAmount.Text) * 1
+        woodenPlanksResult.Text = Val(stickyPistonAmount.Text) * 3
+        slimeResult.Text = Val(stickyPistonAmount.Text) * 1
     End Sub
 
-    'Noteblock'
-    Private Sub notetxt_TextChanged(sender As Object, e As EventArgs) Handles noteblockAmount.TextChanged
-        plank.Text = Val(noteblockAmount.Text) * 8 'Deski
-        redstone.Text = Val(noteblockAmount.Text) * 1 'Redstone
+    Private Sub noteblockAmount_TextChanged(sender As Object, e As EventArgs) Handles noteblockAmount.TextChanged
+        woodenPlanksResult.Text = Val(noteblockAmount.Text) * 8
+        redstoneResult.Text = Val(noteblockAmount.Text) * 1
     End Sub
 End Class

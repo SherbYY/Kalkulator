@@ -36,8 +36,8 @@ Partial Class MainWindow
         Me.dropperButton = New System.Windows.Forms.RadioButton()
         Me.redstoneLampButton = New System.Windows.Forms.RadioButton()
         Me.daylightSensorButton = New System.Windows.Forms.RadioButton()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.inputBackground = New System.Windows.Forms.PictureBox()
+        Me.outputBackground = New System.Windows.Forms.PictureBox()
         Me.noteblockButton = New System.Windows.Forms.RadioButton()
         Me.stickyPistonButton = New System.Windows.Forms.RadioButton()
         Me.pistonButton = New System.Windows.Forms.RadioButton()
@@ -46,20 +46,20 @@ Partial Class MainWindow
         Me.pistonAmount = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.redstone = New System.Windows.Forms.Label()
-        Me.redstoneT = New System.Windows.Forms.Label()
-        Me.Cstone = New System.Windows.Forms.Label()
-        Me.stone = New System.Windows.Forms.Label()
-        Me.bow = New System.Windows.Forms.Label()
-        Me.iron = New System.Windows.Forms.Label()
-        Me.qua = New System.Windows.Forms.Label()
-        Me.Gstone = New System.Windows.Forms.Label()
-        Me.glass = New System.Windows.Forms.Label()
-        Me.slab = New System.Windows.Forms.Label()
-        Me.plank = New System.Windows.Forms.Label()
-        Me.slime = New System.Windows.Forms.Label()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.redstoneResult = New System.Windows.Forms.Label()
+        Me.redstoneTorchResult = New System.Windows.Forms.Label()
+        Me.cobblestoneResult = New System.Windows.Forms.Label()
+        Me.stoneResult = New System.Windows.Forms.Label()
+        Me.bowResult = New System.Windows.Forms.Label()
+        Me.ironIngotResult = New System.Windows.Forms.Label()
+        Me.quartzResult = New System.Windows.Forms.Label()
+        Me.glowstoneResult = New System.Windows.Forms.Label()
+        Me.glassResult = New System.Windows.Forms.Label()
+        Me.woodenSlabResult = New System.Windows.Forms.Label()
+        Me.woodenPlanksResult = New System.Windows.Forms.Label()
+        Me.slimeResult = New System.Windows.Forms.Label()
+        CType(Me.inputBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.outputBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -191,27 +191,27 @@ Partial Class MainWindow
         Me.daylightSensorButton.TabStop = True
         Me.daylightSensorButton.UseVisualStyleBackColor = False
         '
-        'PictureBox17
+        'inputBackground
         '
-        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox17.Location = New System.Drawing.Point(52, 12)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(354, 118)
-        Me.PictureBox17.TabIndex = 44
-        Me.PictureBox17.TabStop = False
+        Me.inputBackground.BackColor = System.Drawing.Color.Transparent
+        Me.inputBackground.BackgroundImage = CType(resources.GetObject("inputBackground.BackgroundImage"), System.Drawing.Image)
+        Me.inputBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.inputBackground.Location = New System.Drawing.Point(52, 12)
+        Me.inputBackground.Name = "inputBackground"
+        Me.inputBackground.Size = New System.Drawing.Size(354, 118)
+        Me.inputBackground.TabIndex = 44
+        Me.inputBackground.TabStop = False
         '
-        'PictureBox1
+        'outputBackground
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 139)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(464, 119)
-        Me.PictureBox1.TabIndex = 45
-        Me.PictureBox1.TabStop = False
+        Me.outputBackground.BackColor = System.Drawing.Color.Transparent
+        Me.outputBackground.BackgroundImage = CType(resources.GetObject("outputBackground.BackgroundImage"), System.Drawing.Image)
+        Me.outputBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.outputBackground.Location = New System.Drawing.Point(3, 139)
+        Me.outputBackground.Name = "outputBackground"
+        Me.outputBackground.Size = New System.Drawing.Size(464, 119)
+        Me.outputBackground.TabIndex = 45
+        Me.outputBackground.TabStop = False
         '
         'noteblockButton
         '
@@ -286,149 +286,149 @@ Partial Class MainWindow
         Me.PictureBox3.TabIndex = 53
         Me.PictureBox3.TabStop = False
         '
-        'redstone
+        'redstoneResult
         '
-        Me.redstone.AutoSize = True
-        Me.redstone.BackColor = System.Drawing.Color.Silver
-        Me.redstone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.redstone.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.redstone.Location = New System.Drawing.Point(21, 226)
-        Me.redstone.Name = "redstone"
-        Me.redstone.Size = New System.Drawing.Size(13, 13)
-        Me.redstone.TabIndex = 54
-        Me.redstone.Text = "0"
+        Me.redstoneResult.AutoSize = True
+        Me.redstoneResult.BackColor = System.Drawing.Color.Silver
+        Me.redstoneResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.redstoneResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.redstoneResult.Location = New System.Drawing.Point(21, 226)
+        Me.redstoneResult.Name = "redstoneResult"
+        Me.redstoneResult.Size = New System.Drawing.Size(13, 13)
+        Me.redstoneResult.TabIndex = 54
+        Me.redstoneResult.Text = "0"
         '
-        'redstoneT
+        'redstoneTorchResult
         '
-        Me.redstoneT.AutoSize = True
-        Me.redstoneT.BackColor = System.Drawing.Color.Silver
-        Me.redstoneT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.redstoneT.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.redstoneT.Location = New System.Drawing.Point(60, 226)
-        Me.redstoneT.Name = "redstoneT"
-        Me.redstoneT.Size = New System.Drawing.Size(13, 13)
-        Me.redstoneT.TabIndex = 55
-        Me.redstoneT.Text = "0"
+        Me.redstoneTorchResult.AutoSize = True
+        Me.redstoneTorchResult.BackColor = System.Drawing.Color.Silver
+        Me.redstoneTorchResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.redstoneTorchResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.redstoneTorchResult.Location = New System.Drawing.Point(60, 226)
+        Me.redstoneTorchResult.Name = "redstoneTorchResult"
+        Me.redstoneTorchResult.Size = New System.Drawing.Size(13, 13)
+        Me.redstoneTorchResult.TabIndex = 55
+        Me.redstoneTorchResult.Text = "0"
         '
-        'Cstone
+        'cobblestoneResult
         '
-        Me.Cstone.AutoSize = True
-        Me.Cstone.BackColor = System.Drawing.Color.Silver
-        Me.Cstone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Cstone.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Cstone.Location = New System.Drawing.Point(132, 226)
-        Me.Cstone.Name = "Cstone"
-        Me.Cstone.Size = New System.Drawing.Size(13, 13)
-        Me.Cstone.TabIndex = 57
-        Me.Cstone.Text = "0"
+        Me.cobblestoneResult.AutoSize = True
+        Me.cobblestoneResult.BackColor = System.Drawing.Color.Silver
+        Me.cobblestoneResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.cobblestoneResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.cobblestoneResult.Location = New System.Drawing.Point(132, 226)
+        Me.cobblestoneResult.Name = "cobblestoneResult"
+        Me.cobblestoneResult.Size = New System.Drawing.Size(13, 13)
+        Me.cobblestoneResult.TabIndex = 57
+        Me.cobblestoneResult.Text = "0"
         '
-        'stone
+        'stoneResult
         '
-        Me.stone.AutoSize = True
-        Me.stone.BackColor = System.Drawing.Color.Silver
-        Me.stone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.stone.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.stone.Location = New System.Drawing.Point(97, 226)
-        Me.stone.Name = "stone"
-        Me.stone.Size = New System.Drawing.Size(13, 13)
-        Me.stone.TabIndex = 56
-        Me.stone.Text = "0"
+        Me.stoneResult.AutoSize = True
+        Me.stoneResult.BackColor = System.Drawing.Color.Silver
+        Me.stoneResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.stoneResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.stoneResult.Location = New System.Drawing.Point(97, 226)
+        Me.stoneResult.Name = "stoneResult"
+        Me.stoneResult.Size = New System.Drawing.Size(13, 13)
+        Me.stoneResult.TabIndex = 56
+        Me.stoneResult.Text = "0"
         '
-        'bow
+        'bowResult
         '
-        Me.bow.AutoSize = True
-        Me.bow.BackColor = System.Drawing.Color.Silver
-        Me.bow.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.bow.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.bow.Location = New System.Drawing.Point(203, 226)
-        Me.bow.Name = "bow"
-        Me.bow.Size = New System.Drawing.Size(13, 13)
-        Me.bow.TabIndex = 59
-        Me.bow.Text = "0"
+        Me.bowResult.AutoSize = True
+        Me.bowResult.BackColor = System.Drawing.Color.Silver
+        Me.bowResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.bowResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.bowResult.Location = New System.Drawing.Point(203, 226)
+        Me.bowResult.Name = "bowResult"
+        Me.bowResult.Size = New System.Drawing.Size(13, 13)
+        Me.bowResult.TabIndex = 59
+        Me.bowResult.Text = "0"
         '
-        'iron
+        'ironIngotResult
         '
-        Me.iron.AutoSize = True
-        Me.iron.BackColor = System.Drawing.Color.Silver
-        Me.iron.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.iron.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.iron.Location = New System.Drawing.Point(168, 226)
-        Me.iron.Name = "iron"
-        Me.iron.Size = New System.Drawing.Size(13, 13)
-        Me.iron.TabIndex = 58
-        Me.iron.Text = "0"
+        Me.ironIngotResult.AutoSize = True
+        Me.ironIngotResult.BackColor = System.Drawing.Color.Silver
+        Me.ironIngotResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.ironIngotResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ironIngotResult.Location = New System.Drawing.Point(168, 226)
+        Me.ironIngotResult.Name = "ironIngotResult"
+        Me.ironIngotResult.Size = New System.Drawing.Size(13, 13)
+        Me.ironIngotResult.TabIndex = 58
+        Me.ironIngotResult.Text = "0"
         '
-        'qua
+        'quartzResult
         '
-        Me.qua.AutoSize = True
-        Me.qua.BackColor = System.Drawing.Color.Silver
-        Me.qua.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.qua.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.qua.Location = New System.Drawing.Point(278, 226)
-        Me.qua.Name = "qua"
-        Me.qua.Size = New System.Drawing.Size(13, 13)
-        Me.qua.TabIndex = 61
-        Me.qua.Text = "0"
+        Me.quartzResult.AutoSize = True
+        Me.quartzResult.BackColor = System.Drawing.Color.Silver
+        Me.quartzResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.quartzResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.quartzResult.Location = New System.Drawing.Point(278, 226)
+        Me.quartzResult.Name = "quartzResult"
+        Me.quartzResult.Size = New System.Drawing.Size(13, 13)
+        Me.quartzResult.TabIndex = 61
+        Me.quartzResult.Text = "0"
         '
-        'Gstone
+        'glowstoneResult
         '
-        Me.Gstone.AutoSize = True
-        Me.Gstone.BackColor = System.Drawing.Color.Silver
-        Me.Gstone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Gstone.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Gstone.Location = New System.Drawing.Point(239, 226)
-        Me.Gstone.Name = "Gstone"
-        Me.Gstone.Size = New System.Drawing.Size(13, 13)
-        Me.Gstone.TabIndex = 60
-        Me.Gstone.Text = "0"
+        Me.glowstoneResult.AutoSize = True
+        Me.glowstoneResult.BackColor = System.Drawing.Color.Silver
+        Me.glowstoneResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.glowstoneResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.glowstoneResult.Location = New System.Drawing.Point(239, 226)
+        Me.glowstoneResult.Name = "glowstoneResult"
+        Me.glowstoneResult.Size = New System.Drawing.Size(13, 13)
+        Me.glowstoneResult.TabIndex = 60
+        Me.glowstoneResult.Text = "0"
         '
-        'glass
+        'glassResult
         '
-        Me.glass.AutoSize = True
-        Me.glass.BackColor = System.Drawing.Color.Silver
-        Me.glass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.glass.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.glass.Location = New System.Drawing.Point(347, 226)
-        Me.glass.Name = "glass"
-        Me.glass.Size = New System.Drawing.Size(13, 13)
-        Me.glass.TabIndex = 63
-        Me.glass.Text = "0"
+        Me.glassResult.AutoSize = True
+        Me.glassResult.BackColor = System.Drawing.Color.Silver
+        Me.glassResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.glassResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.glassResult.Location = New System.Drawing.Point(347, 226)
+        Me.glassResult.Name = "glassResult"
+        Me.glassResult.Size = New System.Drawing.Size(13, 13)
+        Me.glassResult.TabIndex = 63
+        Me.glassResult.Text = "0"
         '
-        'slab
+        'woodenSlabResult
         '
-        Me.slab.AutoSize = True
-        Me.slab.BackColor = System.Drawing.Color.Silver
-        Me.slab.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.slab.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.slab.Location = New System.Drawing.Point(313, 226)
-        Me.slab.Name = "slab"
-        Me.slab.Size = New System.Drawing.Size(13, 13)
-        Me.slab.TabIndex = 62
-        Me.slab.Text = "0"
+        Me.woodenSlabResult.AutoSize = True
+        Me.woodenSlabResult.BackColor = System.Drawing.Color.Silver
+        Me.woodenSlabResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.woodenSlabResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.woodenSlabResult.Location = New System.Drawing.Point(313, 226)
+        Me.woodenSlabResult.Name = "woodenSlabResult"
+        Me.woodenSlabResult.Size = New System.Drawing.Size(13, 13)
+        Me.woodenSlabResult.TabIndex = 62
+        Me.woodenSlabResult.Text = "0"
         '
-        'plank
+        'woodenPlanksResult
         '
-        Me.plank.AutoSize = True
-        Me.plank.BackColor = System.Drawing.Color.Silver
-        Me.plank.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.plank.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.plank.Location = New System.Drawing.Point(419, 226)
-        Me.plank.Name = "plank"
-        Me.plank.Size = New System.Drawing.Size(13, 13)
-        Me.plank.TabIndex = 65
-        Me.plank.Text = "0"
+        Me.woodenPlanksResult.AutoSize = True
+        Me.woodenPlanksResult.BackColor = System.Drawing.Color.Silver
+        Me.woodenPlanksResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.woodenPlanksResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.woodenPlanksResult.Location = New System.Drawing.Point(419, 226)
+        Me.woodenPlanksResult.Name = "woodenPlanksResult"
+        Me.woodenPlanksResult.Size = New System.Drawing.Size(13, 13)
+        Me.woodenPlanksResult.TabIndex = 65
+        Me.woodenPlanksResult.Text = "0"
         '
-        'slime
+        'slimeResult
         '
-        Me.slime.AutoSize = True
-        Me.slime.BackColor = System.Drawing.Color.Silver
-        Me.slime.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.slime.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.slime.Location = New System.Drawing.Point(385, 226)
-        Me.slime.Name = "slime"
-        Me.slime.Size = New System.Drawing.Size(13, 13)
-        Me.slime.TabIndex = 64
-        Me.slime.Text = "0"
+        Me.slimeResult.AutoSize = True
+        Me.slimeResult.BackColor = System.Drawing.Color.Silver
+        Me.slimeResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.slimeResult.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.slimeResult.Location = New System.Drawing.Point(385, 226)
+        Me.slimeResult.Name = "slimeResult"
+        Me.slimeResult.Size = New System.Drawing.Size(13, 13)
+        Me.slimeResult.TabIndex = 64
+        Me.slimeResult.Text = "0"
         '
         'MainWindow
         '
@@ -437,18 +437,18 @@ Partial Class MainWindow
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(469, 261)
-        Me.Controls.Add(Me.plank)
-        Me.Controls.Add(Me.slime)
-        Me.Controls.Add(Me.glass)
-        Me.Controls.Add(Me.slab)
-        Me.Controls.Add(Me.qua)
-        Me.Controls.Add(Me.Gstone)
-        Me.Controls.Add(Me.bow)
-        Me.Controls.Add(Me.iron)
-        Me.Controls.Add(Me.Cstone)
-        Me.Controls.Add(Me.stone)
-        Me.Controls.Add(Me.redstoneT)
-        Me.Controls.Add(Me.redstone)
+        Me.Controls.Add(Me.woodenPlanksResult)
+        Me.Controls.Add(Me.slimeResult)
+        Me.Controls.Add(Me.glassResult)
+        Me.Controls.Add(Me.woodenSlabResult)
+        Me.Controls.Add(Me.quartzResult)
+        Me.Controls.Add(Me.glowstoneResult)
+        Me.Controls.Add(Me.bowResult)
+        Me.Controls.Add(Me.ironIngotResult)
+        Me.Controls.Add(Me.cobblestoneResult)
+        Me.Controls.Add(Me.stoneResult)
+        Me.Controls.Add(Me.redstoneTorchResult)
+        Me.Controls.Add(Me.redstoneResult)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.noteblockButton)
         Me.Controls.Add(Me.stickyPistonButton)
@@ -456,7 +456,7 @@ Partial Class MainWindow
         Me.Controls.Add(Me.noteblockAmount)
         Me.Controls.Add(Me.stickyPistonAmount)
         Me.Controls.Add(Me.pistonAmount)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.outputBackground)
         Me.Controls.Add(Me.repeaterAmount)
         Me.Controls.Add(Me.daylightSensorButton)
         Me.Controls.Add(Me.redstoneLampButton)
@@ -469,13 +469,13 @@ Partial Class MainWindow
         Me.Controls.Add(Me.dropperAmount)
         Me.Controls.Add(Me.dispenserAmount)
         Me.Controls.Add(Me.comparatorAmount)
-        Me.Controls.Add(Me.PictureBox17)
+        Me.Controls.Add(Me.inputBackground)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainWindow"
         Me.Text = "Redstone'owy kalkulator"
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.inputBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.outputBackground, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -493,8 +493,8 @@ Partial Class MainWindow
     Friend WithEvents dropperButton As RadioButton
     Friend WithEvents redstoneLampButton As RadioButton
     Friend WithEvents daylightSensorButton As RadioButton
-    Friend WithEvents PictureBox17 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents inputBackground As PictureBox
+    Friend WithEvents outputBackground As PictureBox
     Friend WithEvents noteblockButton As RadioButton
     Friend WithEvents stickyPistonButton As RadioButton
     Friend WithEvents pistonButton As RadioButton
@@ -503,16 +503,16 @@ Partial Class MainWindow
     Friend WithEvents pistonAmount As TextBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents redstone As Label
-    Friend WithEvents redstoneT As Label
-    Friend WithEvents Cstone As Label
-    Friend WithEvents stone As Label
-    Friend WithEvents bow As Label
-    Friend WithEvents iron As Label
-    Friend WithEvents qua As Label
-    Friend WithEvents Gstone As Label
-    Friend WithEvents glass As Label
-    Friend WithEvents slab As Label
-    Friend WithEvents plank As Label
-    Friend WithEvents slime As Label
+    Friend WithEvents redstoneResult As Label
+    Friend WithEvents redstoneTorchResult As Label
+    Friend WithEvents cobblestoneResult As Label
+    Friend WithEvents stoneResult As Label
+    Friend WithEvents bowResult As Label
+    Friend WithEvents ironIngotResult As Label
+    Friend WithEvents quartzResult As Label
+    Friend WithEvents glowstoneResult As Label
+    Friend WithEvents glassResult As Label
+    Friend WithEvents woodenSlabResult As Label
+    Friend WithEvents woodenPlanksResult As Label
+    Friend WithEvents slimeResult As Label
 End Class
