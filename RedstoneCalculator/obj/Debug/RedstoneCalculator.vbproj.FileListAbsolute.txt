@@ -9,3 +9,7 @@ c:\users\kompek\documents\visual studio 2015\Projects\RedstoneCalculator\Redston
 c:\users\kompek\documents\visual studio 2015\Projects\RedstoneCalculator\RedstoneCalculator\obj\Debug\RedstoneCalculator.exe
 c:\users\kompek\documents\visual studio 2015\Projects\RedstoneCalculator\RedstoneCalculator\obj\Debug\RedstoneCalculator.xml
 c:\users\kompek\documents\visual studio 2015\Projects\RedstoneCalculator\RedstoneCalculator\obj\Debug\RedstoneCalculator.pdb
+C:\Users\Piotrek\Documents\GitHubVisualStudio\Kalkulator\RedstoneCalculator\bin\Debug\RedstoneCalculator.exe.config
+C:\Users\Piotrek\Documents\GitHubVisualStudio\Kalkulator\RedstoneCalculator\obj\Debug\RedstoneCalculator.exe
+C:\Users\Piotrek\Documents\GitHubVisualStudio\Kalkulator\RedstoneCalculator\obj\Debug\RedstoneCalculator.xml
+C:\Users\Piotrek\Documents\GitHubVisualStudio\Kalkulator\RedstoneCalculator\obj\Debug\RedstoneCalculator.pdb
