@@ -24,12 +24,12 @@ Partial Class MainWindow
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainWindow))
-        Me.reptxt = New System.Windows.Forms.TextBox()
-        Me.comtxt = New System.Windows.Forms.TextBox()
-        Me.distxt = New System.Windows.Forms.TextBox()
-        Me.dropptxt = New System.Windows.Forms.TextBox()
-        Me.lamptxt = New System.Windows.Forms.TextBox()
-        Me.sensortxt = New System.Windows.Forms.TextBox()
+        Me.repeaterAmount = New System.Windows.Forms.TextBox()
+        Me.comparatorAmount = New System.Windows.Forms.TextBox()
+        Me.dispenserAmount = New System.Windows.Forms.TextBox()
+        Me.dropperAmount = New System.Windows.Forms.TextBox()
+        Me.redstoneLampAmount = New System.Windows.Forms.TextBox()
+        Me.daylightSensorAmount = New System.Windows.Forms.TextBox()
         Me.repeaterButton = New System.Windows.Forms.RadioButton()
         Me.comparatorButton = New System.Windows.Forms.RadioButton()
         Me.dispenserButton = New System.Windows.Forms.RadioButton()
@@ -41,9 +41,9 @@ Partial Class MainWindow
         Me.noteblockButton = New System.Windows.Forms.RadioButton()
         Me.stickyPistonButton = New System.Windows.Forms.RadioButton()
         Me.pistonButton = New System.Windows.Forms.RadioButton()
-        Me.notetxt = New System.Windows.Forms.TextBox()
-        Me.spistontxt = New System.Windows.Forms.TextBox()
-        Me.pistontxt = New System.Windows.Forms.TextBox()
+        Me.noteblockAmount = New System.Windows.Forms.TextBox()
+        Me.stickyPistonAmount = New System.Windows.Forms.TextBox()
+        Me.pistonAmount = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.redstone = New System.Windows.Forms.Label()
@@ -63,59 +63,59 @@ Partial Class MainWindow
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'reptxt
+        'repeaterAmount
         '
-        Me.reptxt.BackColor = System.Drawing.Color.Silver
-        Me.reptxt.Location = New System.Drawing.Point(67, 98)
-        Me.reptxt.Name = "reptxt"
-        Me.reptxt.Size = New System.Drawing.Size(35, 20)
-        Me.reptxt.TabIndex = 2
-        Me.reptxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.repeaterAmount.BackColor = System.Drawing.Color.Silver
+        Me.repeaterAmount.Location = New System.Drawing.Point(67, 98)
+        Me.repeaterAmount.Name = "repeaterAmount"
+        Me.repeaterAmount.Size = New System.Drawing.Size(35, 20)
+        Me.repeaterAmount.TabIndex = 2
+        Me.repeaterAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'comtxt
+        'comparatorAmount
         '
-        Me.comtxt.BackColor = System.Drawing.Color.Silver
-        Me.comtxt.Location = New System.Drawing.Point(103, 98)
-        Me.comtxt.Name = "comtxt"
-        Me.comtxt.Size = New System.Drawing.Size(35, 20)
-        Me.comtxt.TabIndex = 27
-        Me.comtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.comparatorAmount.BackColor = System.Drawing.Color.Silver
+        Me.comparatorAmount.Location = New System.Drawing.Point(103, 98)
+        Me.comparatorAmount.Name = "comparatorAmount"
+        Me.comparatorAmount.Size = New System.Drawing.Size(35, 20)
+        Me.comparatorAmount.TabIndex = 27
+        Me.comparatorAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'distxt
+        'dispenserAmount
         '
-        Me.distxt.BackColor = System.Drawing.Color.Silver
-        Me.distxt.Location = New System.Drawing.Point(138, 98)
-        Me.distxt.Name = "distxt"
-        Me.distxt.Size = New System.Drawing.Size(35, 20)
-        Me.distxt.TabIndex = 29
-        Me.distxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.dispenserAmount.BackColor = System.Drawing.Color.Silver
+        Me.dispenserAmount.Location = New System.Drawing.Point(138, 98)
+        Me.dispenserAmount.Name = "dispenserAmount"
+        Me.dispenserAmount.Size = New System.Drawing.Size(35, 20)
+        Me.dispenserAmount.TabIndex = 29
+        Me.dispenserAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'dropptxt
+        'dropperAmount
         '
-        Me.dropptxt.BackColor = System.Drawing.Color.Silver
-        Me.dropptxt.Location = New System.Drawing.Point(173, 98)
-        Me.dropptxt.Name = "dropptxt"
-        Me.dropptxt.Size = New System.Drawing.Size(35, 20)
-        Me.dropptxt.TabIndex = 31
-        Me.dropptxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.dropperAmount.BackColor = System.Drawing.Color.Silver
+        Me.dropperAmount.Location = New System.Drawing.Point(173, 98)
+        Me.dropperAmount.Name = "dropperAmount"
+        Me.dropperAmount.Size = New System.Drawing.Size(35, 20)
+        Me.dropperAmount.TabIndex = 31
+        Me.dropperAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lamptxt
+        'redstoneLampAmount
         '
-        Me.lamptxt.BackColor = System.Drawing.Color.Silver
-        Me.lamptxt.Location = New System.Drawing.Point(209, 98)
-        Me.lamptxt.Name = "lamptxt"
-        Me.lamptxt.Size = New System.Drawing.Size(35, 20)
-        Me.lamptxt.TabIndex = 33
-        Me.lamptxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.redstoneLampAmount.BackColor = System.Drawing.Color.Silver
+        Me.redstoneLampAmount.Location = New System.Drawing.Point(209, 98)
+        Me.redstoneLampAmount.Name = "redstoneLampAmount"
+        Me.redstoneLampAmount.Size = New System.Drawing.Size(35, 20)
+        Me.redstoneLampAmount.TabIndex = 33
+        Me.redstoneLampAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'sensortxt
+        'daylightSensorAmount
         '
-        Me.sensortxt.BackColor = System.Drawing.Color.Silver
-        Me.sensortxt.Location = New System.Drawing.Point(245, 98)
-        Me.sensortxt.Name = "sensortxt"
-        Me.sensortxt.Size = New System.Drawing.Size(35, 20)
-        Me.sensortxt.TabIndex = 35
-        Me.sensortxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.daylightSensorAmount.BackColor = System.Drawing.Color.Silver
+        Me.daylightSensorAmount.Location = New System.Drawing.Point(245, 98)
+        Me.daylightSensorAmount.Name = "daylightSensorAmount"
+        Me.daylightSensorAmount.Size = New System.Drawing.Size(35, 20)
+        Me.daylightSensorAmount.TabIndex = 35
+        Me.daylightSensorAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'repeaterButton
         '
@@ -251,32 +251,32 @@ Partial Class MainWindow
         Me.pistonButton.TabStop = True
         Me.pistonButton.UseVisualStyleBackColor = False
         '
-        'notetxt
+        'noteblockAmount
         '
-        Me.notetxt.BackColor = System.Drawing.Color.Silver
-        Me.notetxt.Location = New System.Drawing.Point(355, 98)
-        Me.notetxt.Name = "notetxt"
-        Me.notetxt.Size = New System.Drawing.Size(35, 20)
-        Me.notetxt.TabIndex = 48
-        Me.notetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.noteblockAmount.BackColor = System.Drawing.Color.Silver
+        Me.noteblockAmount.Location = New System.Drawing.Point(355, 98)
+        Me.noteblockAmount.Name = "noteblockAmount"
+        Me.noteblockAmount.Size = New System.Drawing.Size(35, 20)
+        Me.noteblockAmount.TabIndex = 48
+        Me.noteblockAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'spistontxt
+        'stickyPistonAmount
         '
-        Me.spistontxt.BackColor = System.Drawing.Color.Silver
-        Me.spistontxt.Location = New System.Drawing.Point(319, 98)
-        Me.spistontxt.Name = "spistontxt"
-        Me.spistontxt.Size = New System.Drawing.Size(35, 20)
-        Me.spistontxt.TabIndex = 47
-        Me.spistontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.stickyPistonAmount.BackColor = System.Drawing.Color.Silver
+        Me.stickyPistonAmount.Location = New System.Drawing.Point(319, 98)
+        Me.stickyPistonAmount.Name = "stickyPistonAmount"
+        Me.stickyPistonAmount.Size = New System.Drawing.Size(35, 20)
+        Me.stickyPistonAmount.TabIndex = 47
+        Me.stickyPistonAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'pistontxt
+        'pistonAmount
         '
-        Me.pistontxt.BackColor = System.Drawing.Color.Silver
-        Me.pistontxt.Location = New System.Drawing.Point(283, 98)
-        Me.pistontxt.Name = "pistontxt"
-        Me.pistontxt.Size = New System.Drawing.Size(35, 20)
-        Me.pistontxt.TabIndex = 46
-        Me.pistontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.pistonAmount.BackColor = System.Drawing.Color.Silver
+        Me.pistonAmount.Location = New System.Drawing.Point(283, 98)
+        Me.pistonAmount.Name = "pistonAmount"
+        Me.pistonAmount.Size = New System.Drawing.Size(35, 20)
+        Me.pistonAmount.TabIndex = 46
+        Me.pistonAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox3
         '
@@ -453,22 +453,22 @@ Partial Class MainWindow
         Me.Controls.Add(Me.noteblockButton)
         Me.Controls.Add(Me.stickyPistonButton)
         Me.Controls.Add(Me.pistonButton)
-        Me.Controls.Add(Me.notetxt)
-        Me.Controls.Add(Me.spistontxt)
-        Me.Controls.Add(Me.pistontxt)
+        Me.Controls.Add(Me.noteblockAmount)
+        Me.Controls.Add(Me.stickyPistonAmount)
+        Me.Controls.Add(Me.pistonAmount)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.reptxt)
+        Me.Controls.Add(Me.repeaterAmount)
         Me.Controls.Add(Me.daylightSensorButton)
         Me.Controls.Add(Me.redstoneLampButton)
         Me.Controls.Add(Me.dropperButton)
         Me.Controls.Add(Me.dispenserButton)
         Me.Controls.Add(Me.comparatorButton)
         Me.Controls.Add(Me.repeaterButton)
-        Me.Controls.Add(Me.sensortxt)
-        Me.Controls.Add(Me.lamptxt)
-        Me.Controls.Add(Me.dropptxt)
-        Me.Controls.Add(Me.distxt)
-        Me.Controls.Add(Me.comtxt)
+        Me.Controls.Add(Me.daylightSensorAmount)
+        Me.Controls.Add(Me.redstoneLampAmount)
+        Me.Controls.Add(Me.dropperAmount)
+        Me.Controls.Add(Me.dispenserAmount)
+        Me.Controls.Add(Me.comparatorAmount)
         Me.Controls.Add(Me.PictureBox17)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -481,12 +481,12 @@ Partial Class MainWindow
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents reptxt As TextBox
-    Friend WithEvents comtxt As TextBox
-    Friend WithEvents distxt As TextBox
-    Friend WithEvents dropptxt As TextBox
-    Friend WithEvents lamptxt As TextBox
-    Friend WithEvents sensortxt As TextBox
+    Friend WithEvents repeaterAmount As TextBox
+    Friend WithEvents comparatorAmount As TextBox
+    Friend WithEvents dispenserAmount As TextBox
+    Friend WithEvents dropperAmount As TextBox
+    Friend WithEvents redstoneLampAmount As TextBox
+    Friend WithEvents daylightSensorAmount As TextBox
     Friend WithEvents repeaterButton As RadioButton
     Friend WithEvents comparatorButton As RadioButton
     Friend WithEvents dispenserButton As RadioButton
@@ -498,9 +498,9 @@ Partial Class MainWindow
     Friend WithEvents noteblockButton As RadioButton
     Friend WithEvents stickyPistonButton As RadioButton
     Friend WithEvents pistonButton As RadioButton
-    Friend WithEvents notetxt As TextBox
-    Friend WithEvents spistontxt As TextBox
-    Friend WithEvents pistontxt As TextBox
+    Friend WithEvents noteblockAmount As TextBox
+    Friend WithEvents stickyPistonAmount As TextBox
+    Friend WithEvents pistonAmount As TextBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents redstone As Label
