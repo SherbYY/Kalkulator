@@ -39,15 +39,6 @@ namespace RedstoneCalculator
             this.dropperAmount = new System.Windows.Forms.TextBox();
             this.redstoneLampAmount = new System.Windows.Forms.TextBox();
             this.daylightSensorAmount = new System.Windows.Forms.TextBox();
-            this.repeaterButton = new System.Windows.Forms.RadioButton();
-            this.comparatorButton = new System.Windows.Forms.RadioButton();
-            this.dispenserButton = new System.Windows.Forms.RadioButton();
-            this.dropperButton = new System.Windows.Forms.RadioButton();
-            this.redstoneLampButton = new System.Windows.Forms.RadioButton();
-            this.daylightSensorButton = new System.Windows.Forms.RadioButton();
-            this.noteblockButton = new System.Windows.Forms.RadioButton();
-            this.stickyPistonButton = new System.Windows.Forms.RadioButton();
-            this.pistonButton = new System.Windows.Forms.RadioButton();
             this.noteblockAmount = new System.Windows.Forms.TextBox();
             this.stickyPistonAmount = new System.Windows.Forms.TextBox();
             this.pistonAmount = new System.Windows.Forms.TextBox();
@@ -55,7 +46,7 @@ namespace RedstoneCalculator
             this.outputBackground = new System.Windows.Forms.PictureBox();
             this.inputBackground = new System.Windows.Forms.PictureBox();
             this.woodenPlanksResult = new RedstoneCalculator.TransparentLabel();
-            this.slimeResult = new RedstoneCalculator.TransparentLabel();
+            this.slimeBallsResult = new RedstoneCalculator.TransparentLabel();
             this.glassResult = new RedstoneCalculator.TransparentLabel();
             this.woodenSlabResult = new RedstoneCalculator.TransparentLabel();
             this.quartzResult = new RedstoneCalculator.TransparentLabel();
@@ -79,7 +70,7 @@ namespace RedstoneCalculator
             this.repeaterAmount.Size = new System.Drawing.Size(34, 20);
             this.repeaterAmount.TabIndex = 2;
             this.repeaterAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.repeaterAmount.TextChanged += new System.EventHandler(this.repeaterAmount_TextChanged);
+            this.repeaterAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // comparatorAmount
             // 
@@ -89,7 +80,7 @@ namespace RedstoneCalculator
             this.comparatorAmount.Size = new System.Drawing.Size(34, 20);
             this.comparatorAmount.TabIndex = 27;
             this.comparatorAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.comparatorAmount.TextChanged += new System.EventHandler(this.comparatorAmount_TextChanged);
+            this.comparatorAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // dispenserAmount
             // 
@@ -99,7 +90,7 @@ namespace RedstoneCalculator
             this.dispenserAmount.Size = new System.Drawing.Size(34, 20);
             this.dispenserAmount.TabIndex = 29;
             this.dispenserAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dispenserAmount.TextChanged += new System.EventHandler(this.dispenserAmount_TextChanged);
+            this.dispenserAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // dropperAmount
             // 
@@ -109,7 +100,7 @@ namespace RedstoneCalculator
             this.dropperAmount.Size = new System.Drawing.Size(34, 20);
             this.dropperAmount.TabIndex = 31;
             this.dropperAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dropperAmount.TextChanged += new System.EventHandler(this.dropperAmount_TextChanged);
+            this.dropperAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // redstoneLampAmount
             // 
@@ -119,7 +110,7 @@ namespace RedstoneCalculator
             this.redstoneLampAmount.Size = new System.Drawing.Size(34, 20);
             this.redstoneLampAmount.TabIndex = 33;
             this.redstoneLampAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.redstoneLampAmount.TextChanged += new System.EventHandler(this.redstoneLampAmount_TextChanged);
+            this.redstoneLampAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // daylightSensorAmount
             // 
@@ -129,128 +120,7 @@ namespace RedstoneCalculator
             this.daylightSensorAmount.Size = new System.Drawing.Size(34, 20);
             this.daylightSensorAmount.TabIndex = 35;
             this.daylightSensorAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.daylightSensorAmount.TextChanged += new System.EventHandler(this.daylightSensorAmount_TextChanged);
-            // 
-            // repeaterButton
-            // 
-            this.repeaterButton.AutoSize = true;
-            this.repeaterButton.BackColor = System.Drawing.Color.Silver;
-            this.repeaterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.repeaterButton.Location = new System.Drawing.Point(77, 46);
-            this.repeaterButton.Name = "repeaterButton";
-            this.repeaterButton.Size = new System.Drawing.Size(14, 13);
-            this.repeaterButton.TabIndex = 36;
-            this.repeaterButton.TabStop = true;
-            this.repeaterButton.UseVisualStyleBackColor = false;
-            this.repeaterButton.CheckedChanged += new System.EventHandler(this.repeaterButton_CheckedChanged);
-            // 
-            // comparatorButton
-            // 
-            this.comparatorButton.AutoSize = true;
-            this.comparatorButton.BackColor = System.Drawing.Color.Silver;
-            this.comparatorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comparatorButton.Location = new System.Drawing.Point(113, 46);
-            this.comparatorButton.Name = "comparatorButton";
-            this.comparatorButton.Size = new System.Drawing.Size(14, 13);
-            this.comparatorButton.TabIndex = 37;
-            this.comparatorButton.TabStop = true;
-            this.comparatorButton.UseVisualStyleBackColor = false;
-            this.comparatorButton.CheckedChanged += new System.EventHandler(this.comparatorButton_CheckedChanged);
-            // 
-            // dispenserButton
-            // 
-            this.dispenserButton.AutoSize = true;
-            this.dispenserButton.BackColor = System.Drawing.Color.Silver;
-            this.dispenserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dispenserButton.Location = new System.Drawing.Point(149, 46);
-            this.dispenserButton.Name = "dispenserButton";
-            this.dispenserButton.Size = new System.Drawing.Size(14, 13);
-            this.dispenserButton.TabIndex = 38;
-            this.dispenserButton.TabStop = true;
-            this.dispenserButton.UseVisualStyleBackColor = false;
-            this.dispenserButton.CheckedChanged += new System.EventHandler(this.dispenserButton_CheckedChanged);
-            // 
-            // dropperButton
-            // 
-            this.dropperButton.AutoSize = true;
-            this.dropperButton.BackColor = System.Drawing.Color.Silver;
-            this.dropperButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dropperButton.Location = new System.Drawing.Point(185, 46);
-            this.dropperButton.Name = "dropperButton";
-            this.dropperButton.Size = new System.Drawing.Size(14, 13);
-            this.dropperButton.TabIndex = 39;
-            this.dropperButton.TabStop = true;
-            this.dropperButton.UseVisualStyleBackColor = false;
-            this.dropperButton.CheckedChanged += new System.EventHandler(this.dropperButton_CheckedChanged);
-            // 
-            // redstoneLampButton
-            // 
-            this.redstoneLampButton.AutoSize = true;
-            this.redstoneLampButton.BackColor = System.Drawing.Color.Silver;
-            this.redstoneLampButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.redstoneLampButton.Location = new System.Drawing.Point(221, 46);
-            this.redstoneLampButton.Name = "redstoneLampButton";
-            this.redstoneLampButton.Size = new System.Drawing.Size(14, 13);
-            this.redstoneLampButton.TabIndex = 40;
-            this.redstoneLampButton.TabStop = true;
-            this.redstoneLampButton.UseVisualStyleBackColor = false;
-            this.redstoneLampButton.CheckedChanged += new System.EventHandler(this.redstoneLampButton_CheckedChanged);
-            // 
-            // daylightSensorButton
-            // 
-            this.daylightSensorButton.AutoSize = true;
-            this.daylightSensorButton.BackColor = System.Drawing.Color.Silver;
-            this.daylightSensorButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.daylightSensorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.daylightSensorButton.ForeColor = System.Drawing.Color.Red;
-            this.daylightSensorButton.Location = new System.Drawing.Point(257, 46);
-            this.daylightSensorButton.Name = "daylightSensorButton";
-            this.daylightSensorButton.Size = new System.Drawing.Size(14, 13);
-            this.daylightSensorButton.TabIndex = 41;
-            this.daylightSensorButton.TabStop = true;
-            this.daylightSensorButton.UseVisualStyleBackColor = false;
-            this.daylightSensorButton.CheckedChanged += new System.EventHandler(this.daylightSensorButton_CheckedChanged);
-            // 
-            // noteblockButton
-            // 
-            this.noteblockButton.AutoSize = true;
-            this.noteblockButton.BackColor = System.Drawing.Color.Silver;
-            this.noteblockButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.noteblockButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.noteblockButton.ForeColor = System.Drawing.Color.Red;
-            this.noteblockButton.Location = new System.Drawing.Point(367, 46);
-            this.noteblockButton.Name = "noteblockButton";
-            this.noteblockButton.Size = new System.Drawing.Size(14, 13);
-            this.noteblockButton.TabIndex = 51;
-            this.noteblockButton.TabStop = true;
-            this.noteblockButton.UseVisualStyleBackColor = false;
-            this.noteblockButton.CheckedChanged += new System.EventHandler(this.noteblockButton_CheckedChanged);
-            // 
-            // stickyPistonButton
-            // 
-            this.stickyPistonButton.AutoSize = true;
-            this.stickyPistonButton.BackColor = System.Drawing.Color.Silver;
-            this.stickyPistonButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.stickyPistonButton.Location = new System.Drawing.Point(331, 46);
-            this.stickyPistonButton.Name = "stickyPistonButton";
-            this.stickyPistonButton.Size = new System.Drawing.Size(14, 13);
-            this.stickyPistonButton.TabIndex = 50;
-            this.stickyPistonButton.TabStop = true;
-            this.stickyPistonButton.UseVisualStyleBackColor = false;
-            this.stickyPistonButton.CheckedChanged += new System.EventHandler(this.stickyPistonButton_CheckedChanged);
-            // 
-            // pistonButton
-            // 
-            this.pistonButton.AutoSize = true;
-            this.pistonButton.BackColor = System.Drawing.Color.Silver;
-            this.pistonButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pistonButton.Location = new System.Drawing.Point(295, 46);
-            this.pistonButton.Name = "pistonButton";
-            this.pistonButton.Size = new System.Drawing.Size(14, 13);
-            this.pistonButton.TabIndex = 49;
-            this.pistonButton.TabStop = true;
-            this.pistonButton.UseVisualStyleBackColor = false;
-            this.pistonButton.CheckedChanged += new System.EventHandler(this.pistonButton_CheckedChanged);
+            this.daylightSensorAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // noteblockAmount
             // 
@@ -260,7 +130,7 @@ namespace RedstoneCalculator
             this.noteblockAmount.Size = new System.Drawing.Size(34, 20);
             this.noteblockAmount.TabIndex = 48;
             this.noteblockAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.noteblockAmount.TextChanged += new System.EventHandler(this.noteblockAmount_TextChanged);
+            this.noteblockAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // stickyPistonAmount
             // 
@@ -270,7 +140,7 @@ namespace RedstoneCalculator
             this.stickyPistonAmount.Size = new System.Drawing.Size(34, 20);
             this.stickyPistonAmount.TabIndex = 47;
             this.stickyPistonAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.stickyPistonAmount.TextChanged += new System.EventHandler(this.stickyPistonAmount_TextChanged);
+            this.stickyPistonAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // pistonAmount
             // 
@@ -280,7 +150,7 @@ namespace RedstoneCalculator
             this.pistonAmount.Size = new System.Drawing.Size(34, 20);
             this.pistonAmount.TabIndex = 46;
             this.pistonAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.pistonAmount.TextChanged += new System.EventHandler(this.pistonAmount_TextChanged);
+            this.pistonAmount.TextChanged += new System.EventHandler(this.amount_TextChanged);
             // 
             // PictureBox3
             // 
@@ -324,21 +194,21 @@ namespace RedstoneCalculator
             this.woodenPlanksResult.Size = new System.Drawing.Size(32, 26);
             this.woodenPlanksResult.TabIndex = 65;
             this.woodenPlanksResult.TabStop = false;
-            this.woodenPlanksResult.Text = "0";
+            this.woodenPlanksResult.Text = "...";
             this.woodenPlanksResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // slimeResult
+            // slimeBallsResult
             // 
-            this.slimeResult.BackColor = System.Drawing.Color.Silver;
-            this.slimeResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.slimeResult.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.slimeResult.Location = new System.Drawing.Point(380, 226);
-            this.slimeResult.Name = "slimeResult";
-            this.slimeResult.Size = new System.Drawing.Size(32, 26);
-            this.slimeResult.TabIndex = 64;
-            this.slimeResult.TabStop = false;
-            this.slimeResult.Text = "0";
-            this.slimeResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slimeBallsResult.BackColor = System.Drawing.Color.Silver;
+            this.slimeBallsResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.slimeBallsResult.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.slimeBallsResult.Location = new System.Drawing.Point(380, 226);
+            this.slimeBallsResult.Name = "slimeBallsResult";
+            this.slimeBallsResult.Size = new System.Drawing.Size(32, 26);
+            this.slimeBallsResult.TabIndex = 64;
+            this.slimeBallsResult.TabStop = false;
+            this.slimeBallsResult.Text = "...";
+            this.slimeBallsResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // glassResult
             // 
@@ -350,7 +220,7 @@ namespace RedstoneCalculator
             this.glassResult.Size = new System.Drawing.Size(32, 26);
             this.glassResult.TabIndex = 63;
             this.glassResult.TabStop = false;
-            this.glassResult.Text = "0";
+            this.glassResult.Text = "...";
             this.glassResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // woodenSlabResult
@@ -363,7 +233,7 @@ namespace RedstoneCalculator
             this.woodenSlabResult.Size = new System.Drawing.Size(32, 26);
             this.woodenSlabResult.TabIndex = 62;
             this.woodenSlabResult.TabStop = false;
-            this.woodenSlabResult.Text = "0";
+            this.woodenSlabResult.Text = "...";
             this.woodenSlabResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // quartzResult
@@ -376,7 +246,7 @@ namespace RedstoneCalculator
             this.quartzResult.Size = new System.Drawing.Size(32, 26);
             this.quartzResult.TabIndex = 61;
             this.quartzResult.TabStop = false;
-            this.quartzResult.Text = "0";
+            this.quartzResult.Text = "...";
             this.quartzResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // glowstoneResult
@@ -389,7 +259,7 @@ namespace RedstoneCalculator
             this.glowstoneResult.Size = new System.Drawing.Size(32, 26);
             this.glowstoneResult.TabIndex = 60;
             this.glowstoneResult.TabStop = false;
-            this.glowstoneResult.Text = "0";
+            this.glowstoneResult.Text = "...";
             this.glowstoneResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bowResult
@@ -402,7 +272,7 @@ namespace RedstoneCalculator
             this.bowResult.Size = new System.Drawing.Size(32, 26);
             this.bowResult.TabIndex = 59;
             this.bowResult.TabStop = false;
-            this.bowResult.Text = "0";
+            this.bowResult.Text = "...";
             this.bowResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ironIngotResult
@@ -415,7 +285,7 @@ namespace RedstoneCalculator
             this.ironIngotResult.Size = new System.Drawing.Size(32, 26);
             this.ironIngotResult.TabIndex = 58;
             this.ironIngotResult.TabStop = false;
-            this.ironIngotResult.Text = "0";
+            this.ironIngotResult.Text = "...";
             this.ironIngotResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cobblestoneResult
@@ -428,7 +298,7 @@ namespace RedstoneCalculator
             this.cobblestoneResult.Size = new System.Drawing.Size(32, 26);
             this.cobblestoneResult.TabIndex = 57;
             this.cobblestoneResult.TabStop = false;
-            this.cobblestoneResult.Text = "0";
+            this.cobblestoneResult.Text = "...";
             this.cobblestoneResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // stoneResult
@@ -441,7 +311,7 @@ namespace RedstoneCalculator
             this.stoneResult.Size = new System.Drawing.Size(32, 26);
             this.stoneResult.TabIndex = 56;
             this.stoneResult.TabStop = false;
-            this.stoneResult.Text = "0";
+            this.stoneResult.Text = "...";
             this.stoneResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // redstoneTorchResult
@@ -454,7 +324,7 @@ namespace RedstoneCalculator
             this.redstoneTorchResult.Size = new System.Drawing.Size(32, 26);
             this.redstoneTorchResult.TabIndex = 55;
             this.redstoneTorchResult.TabStop = false;
-            this.redstoneTorchResult.Text = "0";
+            this.redstoneTorchResult.Text = "...";
             this.redstoneTorchResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // redstoneResult
@@ -467,7 +337,7 @@ namespace RedstoneCalculator
             this.redstoneResult.Size = new System.Drawing.Size(32, 26);
             this.redstoneResult.TabIndex = 54;
             this.redstoneResult.TabStop = false;
-            this.redstoneResult.Text = "0";
+            this.redstoneResult.Text = "...";
             this.redstoneResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainWindow
@@ -478,7 +348,7 @@ namespace RedstoneCalculator
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(469, 261);
             this.Controls.Add(this.woodenPlanksResult);
-            this.Controls.Add(this.slimeResult);
+            this.Controls.Add(this.slimeBallsResult);
             this.Controls.Add(this.glassResult);
             this.Controls.Add(this.woodenSlabResult);
             this.Controls.Add(this.quartzResult);
@@ -490,20 +360,11 @@ namespace RedstoneCalculator
             this.Controls.Add(this.redstoneTorchResult);
             this.Controls.Add(this.redstoneResult);
             this.Controls.Add(this.PictureBox3);
-            this.Controls.Add(this.noteblockButton);
-            this.Controls.Add(this.stickyPistonButton);
-            this.Controls.Add(this.pistonButton);
             this.Controls.Add(this.noteblockAmount);
             this.Controls.Add(this.stickyPistonAmount);
             this.Controls.Add(this.pistonAmount);
             this.Controls.Add(this.outputBackground);
             this.Controls.Add(this.repeaterAmount);
-            this.Controls.Add(this.daylightSensorButton);
-            this.Controls.Add(this.redstoneLampButton);
-            this.Controls.Add(this.dropperButton);
-            this.Controls.Add(this.dispenserButton);
-            this.Controls.Add(this.comparatorButton);
-            this.Controls.Add(this.repeaterButton);
             this.Controls.Add(this.daylightSensorAmount);
             this.Controls.Add(this.redstoneLampAmount);
             this.Controls.Add(this.dropperAmount);
@@ -517,7 +378,6 @@ namespace RedstoneCalculator
             this.MinimumSize = new System.Drawing.Size(485, 300);
             this.Name = "MainWindow";
             this.Text = "Redstonowy kalkulator";
-            this.Load += new System.EventHandler(this.MainWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.outputBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBackground)).EndInit();
@@ -531,17 +391,8 @@ namespace RedstoneCalculator
         internal TextBox dropperAmount;
         internal TextBox redstoneLampAmount;
         internal TextBox daylightSensorAmount;
-        internal RadioButton repeaterButton;
-        internal RadioButton comparatorButton;
-        internal RadioButton dispenserButton;
-        internal RadioButton dropperButton;
-        internal RadioButton redstoneLampButton;
-        internal RadioButton daylightSensorButton;
         internal PictureBox inputBackground;
         internal PictureBox outputBackground;
-        internal RadioButton noteblockButton;
-        internal RadioButton stickyPistonButton;
-        internal RadioButton pistonButton;
         internal TextBox noteblockAmount;
         internal TextBox stickyPistonAmount;
         internal TextBox pistonAmount;
@@ -557,6 +408,6 @@ namespace RedstoneCalculator
         internal TransparentLabel glassResult;
         internal TransparentLabel woodenSlabResult;
         internal TransparentLabel woodenPlanksResult;
-        internal TransparentLabel slimeResult;
+        internal TransparentLabel slimeBallsResult;
     }
 }
